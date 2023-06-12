@@ -110,14 +110,11 @@ docker run --name ocserv --privileged -p 443:443 -p 443:443/udp -d ocserv
 
 Next steps like add or remove users are same as Docker Installation part.
 
+## Local Port Forwarding
+ssh -pforeignPort -f -N -L *:443:localhost:443 root@foreignIp
 
 ## Issues
 Feel free to submit issues and enhancement requests or contact me via [vida.page/nima](https://vida.page/nima).
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv&type=Date)](https://star-history.com/#iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv&Date)
-
 
 ## More
 The script is based on [here](https://ocserv.gitlab.io/www/recipes-ocserv-configuration-basic.html)
