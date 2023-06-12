@@ -52,6 +52,9 @@ sed -i -e 's@no-route =@#no-route =@g' /etc/ocserv/ocserv.conf
 sed -i -e 's@cisco-client-compat@cisco-client-compat = true@g' /etc/ocserv/ocserv.conf
 sed -i -e 's@##auth = "#auth = "pam""@auth = "plain[passwd=/etc/ocserv/ocpasswd]"@g' /etc/ocserv/ocserv.conf
 
+sed -i -e 's@udp-port = @#udp-port = @g' /etc/ocserv/ocserv.conf
+sed -i -e 's@auth-timeout = 240@auth-timeout = 1800@g' /etc/ocserv/ocserv.conf
+
 sed -i -e 's@server-cert = /etc/ssl/certs/ssl-cert-snakeoil.pem@server-cert = /etc/ocserv/server-cert.pem@g' /etc/ocserv/ocserv.conf
 sed -i -e 's@server-key = /etc/ssl/private/ssl-cert-snakeoil.key@server-key = /etc/ocserv/server-key.pem@g' /etc/ocserv/ocserv.conf
 
